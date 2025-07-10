@@ -1,0 +1,76 @@
+/* === Global Fade-In === */
+.fade-in {
+  animation: fadeIn 0.8s ease-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === Card Section Styling === */
+.section-card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.section-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* === Section Headings === */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e293b;
+  border-left: 4px solid #6366f1;
+  padding-left: 1rem;
+}
+
+/* === Highlighted Section Styling (Projects & Achievements) === */
+.section-highlight {
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-top: 2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.2);
+}
+.highlight-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* === Input Field Styling === */
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+.input-field:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+}
+
+/* === Navigation Link Styling === */
+.nav-link {
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease;
+}
+.nav-link:hover {
+  background-color: #e0e7ff;
+}
